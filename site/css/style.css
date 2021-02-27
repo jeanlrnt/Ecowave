@@ -1,0 +1,186 @@
+@font-face {
+    font-family: button;
+    src: url('../fonts/buttonFont.ttf');
+}
+@font-face {
+    font-family: normal;
+    src: url('../fonts/normalFont.ttf');
+}
+@font-face {
+    font-family: title;
+    src: url('../fonts/titleFont.ttf');
+}
+
+
+
+body {
+    overflow-x:hidden;
+    overflow-y:overlay; /* manage scrollbar content overflow settings */
+}
+body::-webkit-scrollbar {
+    width:auto; /* manage scrollbar width here */
+}
+body::-webkit-scrollbar * {
+    background:transparent; /* manage scrollbar background color here */
+}
+body::-webkit-scrollbar-thumb {
+    background:rgba(180,180,180,0.1) !important; /* manage scrollbar thumb background color here */
+}
+
+.title {
+    overflow: hidden;
+    font-family: title, serif;
+    font-size: 9rem;
+    line-height: 1;
+    letter-spacing: 0.9rem;
+}
+.normal {
+    font-family: normal, serif;
+}
+.button {
+    font-family: button, serif;
+}
+
+.background {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+h2.title {
+    font-family: title, serif;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+#menu {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100vw;
+}
+i.cloudy {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background: url("../images/cloudy.svg");
+    background-size: 4rem;
+    background-repeat: no-repeat;
+}
+i.search {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background: url("../images/search.svg");
+    background-size: 1rem;
+}
+i.arrow-right {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background: url("../images/arrow-right.svg");
+    background-size: 4rem;
+}
+i.star {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background: url("../images/star.svg");
+    background-size: 1rem;
+}
+i.personne1 {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/person-24px_1.svg");
+    background-size: 2rem;
+}
+i.personne2 {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/people-24px.svg");
+    background-size: 2rem;
+}
+i.personne3 {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/group_add-24px.svg");
+    background-size: 2rem;
+}
+i.beach {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/beach_access-24px.svg");
+    background-size: 2rem;
+}
+i.electric-scooter {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background: url("../images/electric_scooter-24px.svg");
+    background-size: 1rem;
+}
+#menu a {
+    padding: 0 35px;
+}
+
+.rond {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+span {
+    font-size: 0.75rem;
+}
+
+.spot-preview {
+    border: 2px solid black;
+    background: white;
+}
+
+.counter {
+    background-color: white;
+    padding: 5px 0;
+}
+
+.red {
+    background-color: red;
+}
+
+.green{
+    background-color: #acee47;
+}
+
+.start{
+    padding:10%;
+}
+@media screen and (min-width: 700px){
+    .start{
+        padding:5%;
+    }
+}
+
+
+.stop {
+    padding-top: 50%;
+    transform: translateY(-27%);
+    width: 50px;
+}
+
+.spot-details-panel {
+    max-height: 20rem;
+}
+aside.spot-details-panel {
+    overflow-y:scroll;
+}
+
+
+@media screen and (max-width: 700px) {
+    h1.title {
+        font-size: 4rem;
+    }
+}
